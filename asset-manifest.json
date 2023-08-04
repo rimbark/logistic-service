@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/logistic-service/static/css/main.9c51f2a7.css",
+    "main.js": "/logistic-service/static/js/main.46678941.js",
+    "static/media/pngwing.png": "/logistic-service/static/media/pngwing.ab0701e4fb63904baedc.png",
+    "index.html": "/logistic-service/index.html",
+    "main.9c51f2a7.css.map": "/logistic-service/static/css/main.9c51f2a7.css.map",
+    "main.46678941.js.map": "/logistic-service/static/js/main.46678941.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9c51f2a7.css",
+    "static/js/main.46678941.js"
+  ]
+}
