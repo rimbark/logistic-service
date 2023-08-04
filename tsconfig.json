@@ -24,10 +24,15 @@
       "api/*": ["api/*"],
       "app/*": ["app/*"],
       "components/*": ["components/*"],
+      "helpers/*": ["helpers/*"],
+      "hooks/*": ["hooks/*"],
+      "images/*": ["images/*"],
       "reducers/*": ["reducers/*"],
       "sagas/*": ["sagas/*"],
       "selectors/*": ["selectors/*"],
+      "store/*": ["store/*"],
       "styles/*": ["styles/*"],
+      "types/*": ["types/*"],
     }
   },
   "include": [

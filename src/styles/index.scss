@@ -1,7 +1,8 @@
 @import "reset";
-@import "variables/global";
+@import 'styles/leaflet.scss';
+
 
 body {
   width: 100vh;
-  background-color: #7a550e;
+  height: 100%;
 }
