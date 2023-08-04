@@ -18,15 +18,15 @@ export const SideMenu = () => {
   }
 
   return (
-    <Layout.Sider collapsible={true} breakpoint='lg'>
+    <Layout.Sider breakpoint='lg'>
       <Menu
-        style={{ height: '100%' }}
+        style={{ height: 'max-content' }}
         theme='dark'
         mode='inline'
         onClick={onClick}
         items={routeList.map((item: RouteTypes) => ({
           key: item.id,
-          label: `Маршрут ${item.id}`,
+          label: `${item.id} маршрут`,
         }))}
       />
     </Layout.Sider>
