@@ -6,12 +6,9 @@ import { addCurrentPoints } from 'reducers/currentRoute.slice'
 import { selectRoutes } from 'selectors/rutes.selectors'
 import { PointsInfoType, RouteTypes } from 'types/route.types'
 
-const { Sider } = Layout
-
 export const SideMenu = () => {
   const routeList = useAppSelector(selectRoutes)
   const dispatch = useDispatch()
-
   const chooseRoute = (points: PointsInfoType[]) => {
     dispatch(addCurrentPoints(points))
   }
@@ -21,9 +18,10 @@ export const SideMenu = () => {
   }
 
   return (
-    <Sider style={{ background: 'white' }}>
+    <Layout.Sider collapsible={true} breakpoint='lg'>
       <Menu
-        theme='light'
+        style={{ height: '100%' }}
+        theme='dark'
         mode='inline'
         onClick={onClick}
         items={routeList.map((item: RouteTypes) => ({
@@ -31,6 +29,6 @@ export const SideMenu = () => {
           label: `Маршрут ${item.id}`,
         }))}
       />
-    </Sider>
+    </Layout.Sider>
   )
 }

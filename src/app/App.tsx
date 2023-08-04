@@ -3,16 +3,15 @@ import { Layout } from 'antd'
 import { Map } from 'components/Map/Map'
 import { SideMenu } from 'components/SideMenu/SideMenu'
 import React from 'react'
+import styles from './App.module.scss'
 
 export const App = () => {
   return (
-    <>
-      <Layout>
+    <Layout className={styles.container}>
+      <div className={styles.insideContainer}>
         <SideMenu />
-        <Layout>
-          <Map />
-        </Layout>
-      </Layout>
-    </>
+        <Map />
+      </div>
+    </Layout>
   )
 }

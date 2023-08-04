@@ -1,8 +1,10 @@
 @import "reset";
 @import 'styles/leaflet.scss';
 
-
 body {
-  width: 100vh;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: content-box;
+  height: 100vh;
 }
